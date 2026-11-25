@@ -12,6 +12,9 @@
   <link rel="alternate" hreflang="x-default" href="https://goeresp-create.github.io/aurora-canada/" />
   <link rel="icon" type="image/png" href="../assets/icons/favicon.png" />
   <link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png" />
+  <link rel="preload" href="../assets/fonts/PlayfairDisplay_700Bold.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="../assets/fonts/Inter_400Regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" as="image" href="../assets/art/hero-900.webp" imagesrcset="../assets/art/hero-900.webp 900w, ../assets/art/hero.webp 1536w" imagesizes="100vw" />
   <link rel="stylesheet" href="../styles.css" />
 </head>
 <body data-lang="zh-TW">
@@ -34,14 +37,14 @@
 
   <main>
     <section class="hero" aria-labelledby="headline">
-      <img class="hero-art" src="../assets/art/hero.jpg" alt="" width="1536" height="1024" />
+      <img class="hero-art" src="../assets/art/hero-900.webp" srcset="../assets/art/hero-900.webp 900w, ../assets/art/hero.webp 1536w" sizes="100vw" alt="" width="1536" height="1024" fetchpriority="high" />
       <div class="hero-copy">
-        <p class="eyebrow"><span></span>加拿大天空的極光預報<span></span></p>
-        <h1 id="headline">找到屬於你的<wbr>北極光之夜。</h1>
-        <p class="lede">極光活動、雲量與天色，一次掌握，專為加拿大天空打造。</p>
+        <h1 id="headline">Aurora Canada</h1>
+        <p class="tagline">加拿大天空的極光預報</p>
+        <p class="lede">以加拿大資料為基礎：結合加拿大環境部的雲量預報、NOAA 極光活動與你所在地的天色，給你今晚一個清楚的答案。</p>
         <p class="status">即將登上 iPhone</p>
         <p class="made"><svg class="leaf-sm" viewBox="0 0 100 100" aria-hidden="true"><polygon points="50,2 57,17 64,13 61,36 73,25 76,33 89,30 84,45 93,50 70,62 74,71 53,67 53,96 47,96 47,67 26,71 30,62 7,50 16,45 11,30 24,33 27,25 39,36 36,13 43,17" /></svg>加拿大製造</p>
-        <p class="fine">免費使用。無廣告。免註冊帳號。</p>
+        <p class="fine">免費使用。無廣告。免註冊帳號。Android 版隨後推出。</p>
       </div>
     </section>
 
@@ -70,16 +73,17 @@
         <li><strong>免費提醒。</strong> 極光現在出現、今晚晴朗、明晚條件與磁暴預警。</li>
         <li><strong>無廣告、免帳號。</strong> 不需註冊。</li>
         <li><strong>誠實。</strong> 只說明觀賞條件，從不保證你一定看得到極光。</li>
+        <li><strong>多種語言。</strong> 英文，法文與繁體中文測試中。</li>
       </ul>
     </section>
 
     <section class="places" aria-labelledby="places-h">
-      <h2 id="places-h" class="eyebrow"><span></span>加拿大觀賞地點<span></span></h2>
+      <h2 id="places-h" class="eyebrow"><span></span>精選加拿大觀賞地點<span></span></h2>
       <ul class="dest">
-        <li><a href="../zh-tw/yellowknife.html"><img src="../assets/art/yellowknife.jpg" alt="" loading="lazy" width="264" height="263" /><div><h3>黃刀鎮</h3><p>西北地區</p></div></a></li>
-        <li><a href="../zh-tw/whitehorse.html"><img src="../assets/art/whitehorse.jpg" alt="" loading="lazy" width="264" height="263" /><div><h3>白馬市</h3><p>育空</p></div></a></li>
-        <li><a href="../zh-tw/churchill.html"><img src="../assets/art/churchill.jpg" alt="" loading="lazy" width="264" height="263" /><div><h3>邱吉爾</h3><p>曼尼托巴</p></div></a></li>
-        <li><a href="../zh-tw/inuvik.html"><img src="../assets/art/inuvik.jpg" alt="" loading="lazy" width="264" height="263" /><div><h3>伊努維克</h3><p>西北地區</p></div></a></li>
+        <li><a href="../zh-tw/yellowknife.html"><img src="../assets/art/yellowknife.webp" alt="" loading="lazy" decoding="async" width="264" height="263" /><div><h3>黃刀鎮</h3><p>西北地區</p></div></a></li>
+        <li><a href="../zh-tw/whitehorse.html"><img src="../assets/art/whitehorse.webp" alt="" loading="lazy" decoding="async" width="264" height="263" /><div><h3>白馬市</h3><p>育空</p></div></a></li>
+        <li><a href="../zh-tw/churchill.html"><img src="../assets/art/churchill.webp" alt="" loading="lazy" decoding="async" width="264" height="263" /><div><h3>邱吉爾</h3><p>曼尼托巴</p></div></a></li>
+        <li><a href="../zh-tw/inuvik.html"><img src="../assets/art/inuvik.webp" alt="" loading="lazy" decoding="async" width="264" height="263" /><div><h3>伊努維克</h3><p>西北地區</p></div></a></li>
       </ul>
       <p class="fine center">插圖僅供裝飾，並非目前的天空狀況。</p>
     </section>
@@ -87,10 +91,11 @@
 
   <footer>
     <p class="made"><svg class="leaf-sm" viewBox="0 0 100 100" aria-hidden="true"><polygon points="50,2 57,17 64,13 61,36 73,25 76,33 89,30 84,45 93,50 70,62 74,71 53,67 53,96 47,96 47,67 26,71 30,62 7,50 16,45 11,30 24,33 27,25 39,36 36,13 43,17" /></svg>加拿大製造 · 加拿大天空的極光預報</p>
-    <p>問題或意見回饋：<a href="mailto:aurora.canada.app@gmail.com">aurora.canada.app@gmail.com</a></p>
+    <p>問題或意見回饋：<button type="button" class="email" data-u="ppa.adanac.arorua" data-d="moc.liamg">顯示電子郵件地址</button></p>
     <p>預報資料：加拿大環境與氣候變遷部；美國 NOAA 太空天氣預報中心。本站與加拿大政府及 NOAA 無任何隸屬或背書關係。</p>
     <p>本網站不使用 Cookie 或追蹤。 <a href="../zh-tw/privacy.html">隱私權政策</a></p>
   </footer>
-  <script src="../brand.js"></script>
+  <script>document.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('.email');if(!b)return;var r=function(x){return x.split('').reverse().join('')};var a=r(b.dataset.u)+'@'+r(b.dataset.d);var k=document.createElement('a');k.href='mailto:'+a;k.textContent=a;b.replaceWith(k);k.focus();});</script>
+  <script src="../brand.js" defer></script>
 </body>
 </html>
