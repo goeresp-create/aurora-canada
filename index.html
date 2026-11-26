@@ -35,6 +35,7 @@
       <span data-brand="wordmark1">CANADA</span>
     </a>
     <div class="top-actions">
+    <a class="updates-btn" href="#updates">Get updates</a>
     <label class="lang">
       <span class="sr-only">Language</span>
       <select aria-label="Language" onchange="location.href=this.value + location.search">
@@ -53,6 +54,19 @@
         <h1 id="headline">Aurora Canada</h1>
         <p class="tagline">Aurora forecasts for Canadian skies</p>
         <p class="status">Coming soon to iPhone</p>
+        <form class="signup" id="updates" action="https://assets.mailerlite.com/jsonp/2827216/forms/205221520301098921/subscribe" method="post" data-thanks="Almost done: check your inbox and tap the link to confirm." data-error="That didn’t work. Please try again in a moment.">
+          <h2 class="signup-h">Be the first to know</h2>
+          <p class="signup-p">Launch day, new releases and important news. A few emails a year; unsubscribe anytime.</p>
+          <div class="signup-row">
+            <label class="sr-only" for="signup-email">Email address</label>
+            <input id="signup-email" type="email" name="fields[email]" required autocomplete="email" inputmode="email" placeholder="you@example.com" />
+            <input type="hidden" name="ml-submit" value="1" />
+            <input type="hidden" name="anticsrf" value="true" />
+            <button type="submit">Sign me up</button>
+          </div>
+          <p class="signup-msg" role="status" aria-live="polite"></p>
+          <p class="signup-fine">By signing up you agree to receive emails from Aurora Canada. <a href="privacy.html">Privacy policy</a></p>
+        </form>
         <p class="made"><svg class="leaf-sm" viewBox="0 0 100 100" aria-hidden="true"><polygon points="50,2 57,17 64,13 61,36 73,25 76,33 89,30 84,45 93,50 70,62 74,71 53,67 53,96 47,96 47,67 26,71 30,62 7,50 16,45 11,30 24,33 27,25 39,36 36,13 43,17" /></svg>Made in Canada</p>
         <p class="fine">Android to follow.</p>
       </div>
@@ -107,10 +121,12 @@
     <p>Questions or feedback: <button type="button" class="email" data-u="ppa.adanac.arorua" data-d="moc.liamg">Show email address</button></p>
     <p><a href="https://www.instagram.com/auroracanada.app/" rel="me">Instagram @auroracanada.app</a> · <a href="press.html">Press kit</a></p>
     <p>Forecast data: Environment and Climate Change Canada; NOAA Space Weather Prediction Center. Not affiliated with or endorsed by the Government of Canada or NOAA.</p>
-    <p>No cookies or tracking on this site. <a href="privacy.html">Privacy policy</a></p>
+    <p>No cookies. Anonymous visit counts only (Cloudflare Web Analytics). <a href="privacy.html">Privacy policy</a></p>
   </footer>
   <script>document.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('.email');if(!b)return;var r=function(x){return x.split('').reverse().join('')};var a=r(b.dataset.u)+'@'+r(b.dataset.d);var k=document.createElement('a');k.href='mailto:'+a;k.textContent=a;b.replaceWith(k);k.focus();});</script>
-  
+  <script>document.querySelectorAll('form.signup').forEach(function(f){f.addEventListener('submit',function(e){e.preventDefault();var b=f.querySelector('button');var m=f.querySelector('.signup-msg');b.disabled=true;fetch(f.action,{method:'POST',body:new FormData(f)}).then(function(r){return r.json()}).then(function(j){if(!j||j.success===false)throw 0;f.classList.add('done');m.textContent=f.dataset.thanks}).catch(function(){m.textContent=f.dataset.error;b.disabled=false})})});</script>
   <script src="brand.js" defer></script>
+  <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"5538c8b899a94ded81f6aff270d10872"}'></script>
+
 </body>
 </html>
