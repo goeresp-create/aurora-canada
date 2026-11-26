@@ -33,6 +33,7 @@
       <span data-brand="wordmark0">AURORA</span>
       <span data-brand="wordmark1">CANADA</span>
     </a>
+    <div class="top-actions">
     <label class="lang">
       <span class="sr-only">語言</span>
       <select aria-label="語言" onchange="location.href=this.value + location.search">
@@ -41,6 +42,7 @@
         <option value="../zh-tw/press.html" selected>繁體中文（台灣，草稿）</option>
       </select>
     </label>
+    </div>
   </header>
 
   <main class="dest-page">
@@ -51,7 +53,7 @@
       <p>Most aurora apps are built around global predictions and aren't made with Canada in mind. Aurora Canada is built for Canadians who live under the northern lights, from Yellowknife and Whitehorse to small towns across the country, and for the visitors who travel to our northern communities to see them. It combines Environment Canada cloud forecasts, NOAA aurora activity, and local darkness and moonlight into one honest rating with the reason, never a made-up percentage. It adds hour-by-hour and next-nights outlooks, a live aurora and cloud map, Canada's best aurora destinations with their dark seasons, and alerts.</p>
       <h2>Fact sheet</h2>
       <table class="facts">
-        <tr><th scope="row">Maker</th><td>Patrick Goeres, independent Canadian developer</td></tr>
+        <tr><th scope="row">Maker</th><td>An independent Canadian developer</td></tr>
         <tr><th scope="row">Platform</th><td>iPhone (Android to follow)</td></tr>
         <tr><th scope="row">Price</th><td>Free to download</td></tr>
         <tr><th scope="row">Launch</th><td>November 2026, for the 2026–27 aurora season</td></tr>
@@ -89,6 +91,7 @@
     <p>本網站不使用 Cookie 或追蹤。 <a href="../zh-tw/privacy.html">隱私權政策</a></p>
   </footer>
   <script>document.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('.email');if(!b)return;var r=function(x){return x.split('').reverse().join('')};var a=r(b.dataset.u)+'@'+r(b.dataset.d);var k=document.createElement('a');k.href='mailto:'+a;k.textContent=a;b.replaceWith(k);k.focus();});</script>
+  
   <script src="../brand.js" defer></script>
 </body>
 </html>

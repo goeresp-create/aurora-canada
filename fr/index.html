@@ -34,6 +34,7 @@
       <span data-brand="wordmark0">AURORA</span>
       <span data-brand="wordmark1">CANADA</span>
     </a>
+    <div class="top-actions">
     <label class="lang">
       <span class="sr-only">Langue</span>
       <select aria-label="Langue" onchange="location.href=this.value + location.search">
@@ -42,6 +43,7 @@
         <option value="../zh-tw/index.html">繁體中文（台灣，草稿）</option>
       </select>
     </label>
+    </div>
   </header>
 
   <main>
@@ -108,6 +110,7 @@
     <p>Ce site n’utilise ni témoins ni suivi. <a href="../fr/privacy.html">Politique de confidentialité</a></p>
   </footer>
   <script>document.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('.email');if(!b)return;var r=function(x){return x.split('').reverse().join('')};var a=r(b.dataset.u)+'@'+r(b.dataset.d);var k=document.createElement('a');k.href='mailto:'+a;k.textContent=a;b.replaceWith(k);k.focus();});</script>
+  
   <script src="../brand.js" defer></script>
 </body>
 </html>

@@ -33,6 +33,7 @@
       <span data-brand="wordmark0">AURORA</span>
       <span data-brand="wordmark1">CANADA</span>
     </a>
+    <div class="top-actions">
     <label class="lang">
       <span class="sr-only">語言</span>
       <select aria-label="語言" onchange="location.href=this.value + location.search">
@@ -41,6 +42,7 @@
         <option value="../zh-tw/inuvik.html" selected>繁體中文（台灣，草稿）</option>
       </select>
     </label>
+    </div>
   </header>
 
   <main class="dest-page">
@@ -82,6 +84,7 @@
     <p>本網站不使用 Cookie 或追蹤。 <a href="../zh-tw/privacy.html">隱私權政策</a></p>
   </footer>
   <script>document.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('.email');if(!b)return;var r=function(x){return x.split('').reverse().join('')};var a=r(b.dataset.u)+'@'+r(b.dataset.d);var k=document.createElement('a');k.href='mailto:'+a;k.textContent=a;b.replaceWith(k);k.focus();});</script>
+  
   <script src="../brand.js" defer></script>
 </body>
 </html>
