@@ -222,3 +222,26 @@ main a:not(.dest a), footer a { color: var(--accent); text-underline-offset: 3px
 /* App Store button (replaces the "Coming soon" pill once APP_STORE_URL is set). */
 a.status.store { background: var(--accent); border-color: var(--accent); color: #fff; text-decoration: none; }
 a.status.store:hover, a.status.store:focus-visible { filter: brightness(1.08); }
+
+/* Partners (reciprocal links) */
+.partners { list-style: none; padding: 0; margin: 18px 0 0; display: grid; gap: 12px; }
+.partners a { display: flex; gap: 14px; align-items: center; padding: 14px; border: 1px solid var(--line); border-radius: 14px; text-decoration: none; }
+.partners a:hover { border-color: var(--accent); }
+.partners img { width: 64px; height: 64px; object-fit: contain; border-radius: 10px; background: rgba(246, 237, 223, 0.06); flex: none; }
+.partners h3 { margin: 0; font-size: 18px; color: var(--text); }
+.partners p { margin: 2px 0 0; font-size: 14px; color: var(--text-dim); }
+.partners .place { color: var(--text-faint); font-size: 13px; }
+.join { padding-left: 20px; margin: 10px 0 0; color: var(--text-dim); }
+.join li { margin-top: 6px; }
+.partners-home { max-width: 640px; margin: 0 auto; padding: 8px var(--gutter) 24px; text-align: center; }
+.partner-logos { list-style: none; padding: 0; margin: 18px 0 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 18px; }
+.partner-logos img { height: 48px; width: auto; }
+.partners-cta { margin: 12px 0 0; }
+
+/* Instagram */
+.ig-btn { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; border: 1.5px solid var(--line); border-radius: 50%; color: var(--text); flex: none; }
+.ig-btn:hover, .ig-btn:focus-visible { border-color: var(--accent); color: var(--accent); }
+.ig-btn svg { width: 18px; height: 18px; }
+.ig-link { display: inline-flex; align-items: center; gap: 6px; }
+.ig-link svg { width: 15px; height: 15px; }
+
