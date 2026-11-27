@@ -219,3 +219,6 @@ main a:not(.dest a), footer a { color: var(--accent); text-underline-offset: 3px
     background-position: center, right -20px center;
   }
 }
+/* App Store button (replaces the "Coming soon" pill once APP_STORE_URL is set). */
+a.status.store { background: var(--accent); border-color: var(--accent); color: #fff; text-decoration: none; }
+a.status.store:hover, a.status.store:focus-visible { filter: brightness(1.08); }
