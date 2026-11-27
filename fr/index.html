@@ -131,7 +131,7 @@
   <script>document.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('.email');if(!b)return;var r=function(x){return x.split('').reverse().join('')};var a=r(b.dataset.u)+'@'+r(b.dataset.d);var k=document.createElement('a');k.href='mailto:'+a;k.textContent=a;b.replaceWith(k);k.focus();});</script>
   <script>document.querySelectorAll('form.signup').forEach(function(f){f.addEventListener('submit',function(e){e.preventDefault();var b=f.querySelector('button');var m=f.querySelector('.signup-msg');b.disabled=true;fetch(f.action,{method:'POST',body:new FormData(f)}).then(function(r){return r.json()}).then(function(j){if(!j||j.success===false)throw 0;f.classList.add('done');m.textContent=f.dataset.thanks}).catch(function(){m.textContent=f.dataset.error;b.disabled=false})})});</script>
   <script src="../brand.js" defer></script>
-  <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"5538c8b899a94ded81f6aff270d10872"}'></script>
+  <script>(function(){try{var q=location.search;if(/[?&]notrack=1/.test(q))localStorage.setItem('ac.notrack','1');if(/[?&]notrack=0/.test(q))localStorage.removeItem('ac.notrack');if(localStorage.getItem('ac.notrack'))return}catch(e){}var s=document.createElement('script');s.defer=true;s.src='https://static.cloudflareinsights.com/beacon.min.js';s.setAttribute('data-cf-beacon',"{\"token\":\"5538c8b899a94ded81f6aff270d10872\"}");document.body.appendChild(s)})();</script>
 
 </body>
 </html>
